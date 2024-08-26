@@ -1,0 +1,160 @@
+/* General Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: hsl(161, 61%, 48%);
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease-in-out;
+
+}
+
+header {
+    background-image: url('C:/Users/yunus/Downloads/downloaded files/web/IMG-20240816-WA0027.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 150px 20px;
+    text-align: center;
+    
+ }
+
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    margin: 0;
+}
+
+header p {
+    font-size: 24px;
+    margin: 20px 0;
+}
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.content {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    color: #333;
+}
+
+.about p, .services p, .contact p {
+    font-size: 18px;
+    color: #666;
+}
+
+.services-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    width: 30%;
+    text-align: left;
+}
+
+.service img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.service h3 {
+    font-size: 24px;
+    color: #ff9400;
+    margin-top: 15px;
+}
+
+.service p {
+    font-size: 16px;
+    color: #666;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #ff9400;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #e68a00;
+}
+
+footer {
+    background-color: #ff9400;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+/* Mobile Navigation Toggle Button */
+.nav-toggle {
+    display: none;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    width: 100%;
+    text-align: left;
+}
+
+nav.open {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: none;
+    }
+    .nav-toggle {
+        display: block;
+    }
+}
